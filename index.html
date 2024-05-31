@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./components/form.css" />
+    <link rel="stylesheet" href="./components/loading.css" />
+    <link rel="stylesheet" href="./components/cocktails-box.css" />
+    <link rel="stylesheet" href="./components/utils.css" />
+    <!--  -->
+  </head>
+  <body>
+    <!--  -->
+    <main class="main">
+      <section class="form">
+        <h1 class="form__title">cocktails API</h1>
+        <form class="form__search-box search-form">
+          <input
+            type="text"
+            placeholder="search your favourite drink"
+            name="drink"
+          />
+        </form>
+      </section>
+
+      <!-- cocktails section -->
+      <section class="cocktails">
+        <div class="loading hide-loading">
+          <img src="./src/loading.gif" alt="" />
+        </div>
+
+        <h2 class="cocktails__err-title"></h2>
+
+        <!-- drinks list -->
+        <div class="cocktails__box"></div>
+      </section>
+    </main>
+
+    <!--  -->
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
+
+<!-- remainder -->
+<!-- need to remove width 90% in cocktails-box after fetch -->
